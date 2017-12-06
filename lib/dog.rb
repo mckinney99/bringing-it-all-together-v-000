@@ -70,7 +70,7 @@ class Dog
     end
   end
 
-  end
+  
 
   def self.find_by_name
 
