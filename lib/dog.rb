@@ -79,7 +79,7 @@ class Dog
     WHERE name = ?
     SQL
 
-    self.new(DB[:conn].execute(sql, name).flatten)
+    self.new_from_db(DB[:conn].execute(sql, name).flatten)
 
   end
 
