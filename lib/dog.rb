@@ -66,8 +66,10 @@ class Dog
     if !dog.empty?
       self.find_by_id(dog[0])
     else
-      self.create(name:, breed:)
-    
+      self.create(name:name, breed:breed)
+    end
+  end
+
   end
 
   def self.find_by_name
@@ -77,7 +79,7 @@ class Dog
   def update
 
   end
-  
+
 
 
 
